@@ -1,0 +1,34 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Extract Version
+        shell: pwsh
+        run: |
+          $tag = "${{ github.ref_name }}"
+          $version = $tag.Substring(1)
+          echo "VERSION=$version" >> $env:GITHUB_ENV
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Pack
+        run: dotnet pack --configuration Release /p:PackageVersion=${{ env.VERSION }} --output .
+
+      - name: Push to NuGet
+        run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkusPalcer.Modularity", "MarkusPalcer.Modularity\MarkusPalcer.Modularity.csproj", "{307112C4-EE05-4C38-A403-EDE77A9A0E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkusPalcer.Modularity.CodeGeneration", "MarkusPalcer.Modularity.CodeGeneration\MarkusPalcer.Modularity.CodeGeneration.csproj", "{6DD38818-3A1A-4430-B5B8-D923A50F937B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{307112C4-EE05-4C38-A403-EDE77A9A0E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307112C4-EE05-4C38-A403-EDE77A9A0E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307112C4-EE05-4C38-A403-EDE77A9A0E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307112C4-EE05-4C38-A403-EDE77A9A0E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD38818-3A1A-4430-B5B8-D923A50F937B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD38818-3A1A-4430-B5B8-D923A50F937B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD38818-3A1A-4430-B5B8-D923A50F937B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD38818-3A1A-4430-B5B8-D923A50F937B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
