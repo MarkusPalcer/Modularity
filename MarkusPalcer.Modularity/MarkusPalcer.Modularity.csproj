@@ -14,8 +14,8 @@
         <Authors>Markus Palcer</Authors>
         <Description>Loads modules and lets them register types into a service collection</Description>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <Copyright>Copyright 2023 Markus Palcer</Copyright>
-        <PackageProjectUrl>https://github.com/MarkusPalcer/NightysLibraries</PackageProjectUrl>
+        <Copyright>Copyright 2026 Markus Palcer</Copyright>
+        <PackageProjectUrl>https://github.com/MarkusPalcer/Modularity</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <IncludeBuildOutput>true</IncludeBuildOutput>
     </PropertyGroup>
